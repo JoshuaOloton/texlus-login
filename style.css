@@ -110,3 +110,7 @@ label {
 .main-footer a {
     color: #fff;
 }
+
+.main-footer #home {
+    color: #a4c9fb;
+}
