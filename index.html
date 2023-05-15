@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texlus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,16 +14,20 @@
         <div class="login-wrapper">
             <form action="">
                 <h5 class="login-title">LOGIN</h5>
-                <div class="form-input">
+                <div class="form-input-section">
                     <label for="email">Email</label>
-                    <input type="email" name="" id="email" required>
-                </div>
-                <div class="form-input">
-                    <div class="input-extras">
-                        <label for="password">Password</label>
-                        <p><a href="#">Reset Password</a></p>
+                    <div class="form-input">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" name="" id="email" required>
                     </div>
-                    <input type="text" name="" id="password" required>
+                </div>
+                <div class="form-input-section">
+                    <label for="password">Password</label>
+                    <a href="#" class="reset">Reset Password</a>
+                    <div class="form-input">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" name="" id="password" minlength="8" required>
+                    </div>
                 </div>
                 <div class="btn-wrapper">
                     <button type="submit">Log in</button>

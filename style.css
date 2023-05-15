@@ -43,30 +43,59 @@ body {
 }
 
 input, button {
-    width: 100%;
     padding: 1em;
-    border-radius: 10px;
-    border: 1px solid grey;
+    border: none;
+    outline: none;
 }
 
 button {
     background: #093a75;
+    width: 100%;
     color: #fff;
     font-size: 0.9rem;
+    border-radius: 10px;
 }
 
 label {
     color: grey;
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1em;
+}
+
+.form-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #808080;
+    border-radius: 15px;
+}
+
+.form-input input {
+    background: #e8f0fd;
+    flex-grow: 1;
+    border-radius: 0 15px 15px 0;
+}
+
+.form-input i {
+    font-size: 1.4rem;
+    background: #fff;
+    width: 8%;
+    margin-left: 0.4em;
 }
 
 .input-extras {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.5em 0;
+}
+
+.reset {
+    float: right;
+}
+
+label {
+    display: inline-block;
 }
 
 .input-extras p {
